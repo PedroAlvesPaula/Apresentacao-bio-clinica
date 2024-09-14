@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="{% url 'indexP' %}">Controle do sistema</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="{% url 'indexP' %}">Início</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'receita' %}">Visualizar receita</a></li>
+                <li><a href="#">Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-cards">
+          <div class="card">
+              <img src="assets/img/calendar.jpg" alt="Imagem de calendario">
+              <div class="content">
+                  <h2>Alguma coisa de biomedicina</h2>
+                  <h3>explicação da coisa</h3>
+                  <button>Clique aqui</button>
+              </div>
+          </div>
+      </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
